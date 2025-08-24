@@ -2,9 +2,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import streamlit as st
 
-st.set_page_config(page_title="Generalized Pareto Distribution mean nonconvergence Demo", layout="centered")
+st.set_page_config(page_title="Generalized Pareto Distribution mean convergence Demo", layout="centered")
 
-st.title("Generalized Pareto Distribution mean nonconvergence demo")
+st.title("Generalized Pareto Distribution mean convergence demo")
 
 # --- Sidebar controls (only XI and N, as requested) ---
 st.sidebar.header("Parameters")
@@ -39,7 +39,7 @@ def sample_gamma_gpd(n, p_tail, xi, beta, u, k, theta, rng):
 # Main panel text
 st.write(
     "This app stitches a fixed **Gamma(5,2)** core with a **GPD** tail. "
-    "Pick ξ and N, click **Run simulation**, and see whether the converges."
+    "Pick ξ and N, click **Run simulation**, and see whether the mean converges."
 )
 
 if run:

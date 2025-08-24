@@ -13,8 +13,8 @@ import matplotlib.pyplot as plt
 import streamlit as st
 
 # ---- Streamlit page setup ----
-st.set_page_config(page_title="Gamma core + GPD tail — mean convergence demo", layout="centered")
-st.title("Gamma core + GPD tail — mean convergence demo")
+st.set_page_config(page_title="Generalized Pareto Distribution mean convergence demo", layout="centered")
+st.title("Generalized Pareto Distribution mean convergence demo")
 
 # ---- Fixed parameters ----
 P_TAIL = 0.05          # probability of routing to the tail

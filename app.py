@@ -15,7 +15,7 @@ import streamlit as st
 # ---- Streamlit page setup ----
 st.set_page_config(page_title="Generalized Pareto Distribution mean convergence demo", layout="centered")
 st.markdown("## Pareto distribution mean convergence")
-st.write("This app shows the property of the Generalized Pareto distribution, where the mean sometimes does not converge. This distribution can, for example, describe the behavior of viral content at times.")
+st.write("This app shows the property of the Generalized Pareto distribution (GPD), where the mean sometimes does not converge. This distribution can, for example, describe the behavior of viral content at times.")
 st.write("A. pick a shape parameter ξ and number of samples to run for mean estimation.") 
 st.write("B. Depending on your choice of ξ, you will find either the mean converges, or it will continue to experience jumps due to outliers, and will not converge.")
 
@@ -77,7 +77,7 @@ def run_simulation(xi, N, rng):
     ax.plot(np.arange(1, rm.size + 1), rm)
     ax.set_xlabel("n")
     ax.set_ylabel("Running mean")
-    ax.set_title(f"Running mean — Gamma core + GPD tail (ξ={xi:.2f}, N={N:,})")
+    ax.set_title(f"Running mean for Gamma core + GPD tail (ξ={xi:.2f}, N={N:,})")
     st.pyplot(fig)
 
 # =========================

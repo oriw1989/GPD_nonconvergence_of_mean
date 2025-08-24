@@ -86,7 +86,7 @@ def run_simulation(xi, N, rng):
 
 # ---- Sidebar controls (only XI and N, as requested) ----
 st.sidebar.header("Parameters")
-XI = st.sidebar.slider("Tail shape ξ", min_value=0.0, max_value=3, value=2, step=0.01, key="xi")
+XI = st.sidebar.slider("Tail shape ξ", min_value=0.0, max_value=3.0, value=2.0, step=0.01, key="xi")
 N = st.sidebar.number_input("Sample size N", min_value=10_000, max_value=1_000_000, value=200_000, step=10_000, key="n")
 
 # ---- Session state to control when we actually run, and to get new randomness each time ----

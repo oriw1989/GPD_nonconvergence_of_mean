@@ -16,7 +16,8 @@ import streamlit as st
 st.set_page_config(page_title="Generalized Pareto Distribution mean convergence demo", layout="centered")
 st.title("Generalized Pareto Distribution mean convergence demo")
 st.write("This app shows the property of the Pareto distribution, where the mean sometimes does not converge. This distribution can, for example, describe the behavior of viral content at times.")
-st.write("A. pick a shape parameter ξ and number of samples to run for mean estimation. B. Depending on your choice of ξ, you will find either the mean converges, or it will continue to experience jumps due to outliers, and will not converge.")
+st.write("A. pick a shape parameter ξ and number of samples to run for mean estimation.") 
+st.write("B. Depending on your choice of ξ, you will find either the mean converges, or it will continue to experience jumps due to outliers, and will not converge.")
 
 # ---- Fixed parameters ----
 P_TAIL = 0.05          # probability of routing to the tail (kept fixed)

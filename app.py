@@ -16,10 +16,6 @@ import streamlit as st
 st.set_page_config(page_title="Generalized Pareto Distribution mean convergence demo", layout="centered")
 st.title("Generalized Pareto Distribution mean convergence demo")
 
-# ---- Streamlit page setup ----
-st.set_page_config(page_title="Gamma core + GPD tail — mean convergence demo", layout="centered")
-st.title("Gamma core + GPD tail — mean convergence demo")
-
 # ---- Fixed parameters ----
 P_TAIL = 0.05          # probability of routing to the tail (kept fixed)
 K, THETA = 5.0, 2.0    # Gamma core (mean = K*THETA = 10)

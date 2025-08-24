@@ -13,8 +13,8 @@ import matplotlib.pyplot as plt
 import streamlit as st
 
 # ---- Streamlit page setup ----
-st.set_page_config(page_title="Pareto Distribution mean convergence", layout="centered")
-st.title("Generalized Pareto Distribution mean convergence demo")
+st.set_page_config(page_title="Generalized Pareto Distribution mean convergence demo", layout="centered")
+st.title("Pareto Distribution mean convergence")
 st.write("This app shows the property of the Pareto distribution, where the mean sometimes does not converge. This distribution can, for example, describe the behavior of viral content at times.")
 st.write("A. pick a shape parameter ξ and number of samples to run for mean estimation.") 
 st.write("B. Depending on your choice of ξ, you will find either the mean converges, or it will continue to experience jumps due to outliers, and will not converge.")
